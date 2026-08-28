@@ -1,0 +1,8 @@
+{
+  "anchor_k0": "b63c21fc650f585ca1f210bc9e6a86a84a2125db825e305344951bb21cf25480",
+  "chain_length": 1200,
+  "rule": "K_n = SHA256(K_{n+1}); month m encrypts under K_m; K_0 is this anchor",
+  "hash": "sha256",
+  "entropy_bits": 128,
+  "note": "Published once, on day one. Decrypts nothing -- month 1 uses K_1. Its purpose is that any key released later can be hashed forward to this value, so a released key authenticates itself."
+}
