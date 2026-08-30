@@ -280,14 +280,34 @@ Stated here rather than left to be discovered.
   same licensed vendor data, so that step is available only to someone who holds it.
 - **It says nothing about execution.** The books record intended weights. Realised fills differ, and
   nothing here yet records that difference — when a return ledger exists it will, and this line will
-  say so.
+  say so. How the traded row is executed is stated in `public_terms.json` (`cadence.traded_how`):
+  whole-share legs market-on-close; legs that size to fewer than two whole shares as dollar-based
+  market orders in the final minutes of the session, about 23% of NAV in month one at $50k.
 
 ## Book disclosure
 
 Books are sealed at commitment and disclosed by releasing the key for a month, which discloses that
-month and every earlier one. **The lag between commitment and disclosure is not yet fixed**, and must
-be settled before the first commitment and stated here permanently — a disclosure rule that changes
-later is not a rule.
+month and every earlier one.
+
+**The key for month *m* is released when month *m+19* is committed.** Fixed before the first
+commitment and permanent. Nineteen rather than eighteen because a position runs to at most eighteen
+months under the exit rule, so releasing at *m+18* would disclose a cohort exiting in that very
+month; *m+19* leaves a full month of daylight. A disclosure rule that changes later is not a rule,
+so this one does not change.
+
+## Before you are shown anything
+
+`public_terms.json` states what can be checked **without any disclosure of the calculation rules** —
+the roster is twelve books, which single row is traded, the execution basis of each, the cadence,
+and the disclosure rule above. Its sha256 appears in every manifest's `lineage.public_terms_sha256`,
+so the terms you are reading are provably the terms every month was committed under, back to the
+first.
+
+The claim it supports is narrow and is about **selection**, not about the strategy: each month
+commits all twelve rows in one signed, Bitcoin-timestamped document, with exactly one marked `run`.
+The traded row is therefore named in the same instrument as the eleven it is not, before the month's
+outcome exists, and `roster_changes` records that the set has never been reshaped. Nothing in that
+file reveals more than a published manifest already does.
 
 ---
 

@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 1,
+  "cipher": "AES-256-GCM",
+  "ct": "t7UvD8E8q0mEYQsbdlAV8dFvSG4froP8oJEebuSalflHk+jnSKNnHj16eyp5BcT4RXylRrhGl7lOv8Fe28XCqL34RGdJs5Z1BIpC6Nu2cmTTKsp34rIPxb5V1JKyCIXdnE1GTukS02JmHXQAA/EuE3i4douxWU/I/kzJymeT/6bARgNuTyGMZBQf9fd2H6tCXrKxtSlK6d2NQFzKcnrAn+eZtBsJNQ5y83TJ4daa15ZrsGCkx1qYJnBQJwZOgVWLrC4RDrRHH/AdjqbrY6x6a2CVcTw2HY4CWkFIHXk+G3gsWeonw7u42PxH4wtLYaIjoXu42LhniUyfgDzt9apBwYwFRVgQ+a2xJqsKO9wSKL3Um3w6ZiMX++lcsBDFHImMZ02YAP+GXtU3R1EImBmtQnl7FNmwZMv14xoawlLVOojo65smGA9TokHYrbfrklHTHq1MQHf70o7gPU4oow0ymyTiO/LLWFJbrzCEJobnvRWUuuERW3s1i20t+uvkVrCAnuMiSF+utQCB3Txn1XI7MWJHLvjsQOrYb7MTZY72xTlVe7pMmWEcdVl0WqajtY4uDZDOiZ8uVeWNHyXJL5WRM3yLTjBdMe2dU6rq8ZY4NyeL9tLWGhBAruyKhgIxqssXGkP70goKWhOvdHEcSylJv9cTyciQJHx9Y1QF40iEG8xCPDhNpYvlLbfrBKf1h3V5GU/vVfJIb+TIqJ4lirdHG5Usyyw7FiQa5vQY3dYKmeXXuaYX9Jv0xHJLoUrvuWFml5GSzxyFFx5fmApmE+wPoWRfgkV0YEmpth4D//SuZQubxrP2kOwAlllBCDVGAGd11GO5ApTqUh1BOiO9YA9cukHxobMoM/mvelydFVPg0q9yUZh93aI5d1z4vXipsoUfN0OoQSK0v39gzZG5L7kqWmErcO6h/qYBHtcQ6cidwoFD7BwEoc84v2pmTCljvpLayZ8qiFiXeWOnmsIc5kbHgkaVpOplBS78/c3J/AlW9PU7fIlY2uVt1lS0WTILpalTMvyStTdMZCePnZvHGc0RXhPP7MpDvJbhWjehg/TPZPZti1q12L9+wF1njSZKJ1opUTYlv6a26Uce+i3Ecg1GYezlTGb0hxl9LUhCo1ssnMTSilp/SUFw/v/DcD0RxBuiD4a1R6I+qjelBJ6v6Dky2DEXkCTC971K2E70J42XAq8+gidnvWbFbc0qnDnZ1m44j0Ud9j3kqEbKHsYCtEAEMqU=",
+  "format": "QA-SEAL-2",
+  "id": "core.index.stacked",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-08",
+  "nonce": "+voots57CxEO7OGD",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "a17bb830e9e447df257f7e28e0ae4f0dc5dd2da253a4f4a0a3db965413a4c376"
+}

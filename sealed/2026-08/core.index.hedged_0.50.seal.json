@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 1,
+  "cipher": "AES-256-GCM",
+  "ct": "1Bt3yZMxNki/J+Pwn12zeOkjZc+tHIUbnu9f0q9ORnQrUB1zvN37pOZ7/Y0m5YN8oE1LCmBhZIcjCcOpYwLtGJFQEr8+G2ZRsvl1OEj12S2YnE8UrFpAy2ZT5zXCFgL81ij5qtDtMl//JxvUB1+wbsZhhybFjY3NOqykpkEW1UDlE7liQ9lYZ7PHsgKvaXylLx2H7lACKpFV14YUrPlZiDnOFIDMssMWmCmUhatGtMsW9bwSa+4d8/JXfX0KuHd3ordH+SJH+DbC7meBXiF3Q4ueAAZ7yw9HpmkzXW5GPgS/w9z3+9TZzLdh9802vcbrtBBY5vSzeHrBxSZQZOufApSymOc0xx67ueJhdF0eZVYyO5BPX9gMwEz/Xe5rBf6NCVYSPph+xfCMf1FBSLFrcd8wY+eEa85poGGf1MyIwOTbeJ0x5dx8MLXb2v0dzfh9UEPrFZA7TxMOsj7C9AsU9GMDxsQ4qoy1hBvKsB2ug++TtyDBez0SkVbY752HN47qDyOTJ2nJ8umr22afcxKlDw8Jdbs+jwu2G21FapTu502c89XbQWCS4mCrsnQDNeIuB5AcLf7C7VQOocVt9HWAxu3/YLsdMdpIpaLmIAf8RVY+iwOvb7x/FKM0wJZByYLZ+K5jVwnsqcHdy5JiRIbphfrOKCieGYchTzswES+aropR7IwkPH3UieUYBZJgrh79g+Zd7uPSz/yjUK2iS9gddIDcDQ2UKSL0R2aI17wOcLdDmN2hxOrhNZPh1R/kMKTnMelyRlV3JmraiI5aaW/H9oV7c6amidUZ6lvyiUYWbXoTUA88U/6ElYvvbrOovYteCbP57BrUBRGSC/lYKOUaAV23plRlLLXnv9ZsaW8wX0oGV9mzmYz8pCzE8cy2ohzEa0HV9nssPGSzju7/v+5G51fzfEVnm1BqK0ZHZNbU9LTDpzwP7BH1TIXQrsl+Pi6ciY93LmUG3XHYMzHV3m1aHDJ76nkoGiPwO9i2YVVW1PZeCcA4oVkyZTm62ioK+qddfaao31SrKw3qzLbyd9a7BS7d8tUgP34gkq3dvpjWxjcv3oFOM08JQY9xGoOFXld8TbZ3ppppMh7Y3UPfqlx0dtK/Gnn8zmglea4zWxZk15kqz0hzt2XamDvQg9m5SFhWqFL4ajT5uhgJm3AqfVA3sFsZDx6Pcpxk81sC6X3jYgaefkn5bfduKBlp7nHW/Q7lGGghgCSRuOFcBZNK9saxsjSbwGjxqGudvQ==",
+  "format": "QA-SEAL-2",
+  "id": "core.index.hedged_0.50",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-08",
+  "nonce": "gJuJ/lSvd5HL0oCW",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "c87bcf2bebbccf195a408c012d1cb16ff1c0172d236041b0ba79707a59a0adbc"
+}

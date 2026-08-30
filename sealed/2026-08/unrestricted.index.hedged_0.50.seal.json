@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 1,
+  "cipher": "AES-256-GCM",
+  "ct": "QZxFNrTORREQ6AkN3Lw6eCJ4D6079jwKnNiU5/ryaiuSy5b6LlPWooTYxlRiYBnUm56mc+ECrmy3g46/Dvu8/H6Kl1+hO4DH0cikifn42wxRhKR745aoa8KJj3OVtf5/wgFkJ88aSCIOupd5fQojq632X9nTgwPinzHMy42MGIua0XO1LsqTFWv4g0akEOrMxVTkmu0vDVWhH0SdfRKWE9l8YQSitg9vH/6HH+coGtgGaa6jyKfJ9XHR3hBFF7ocl/Z7vMVqXRKXQMElPvKsoFFU718qzGQQYseytY+C3SKljAgXc9CCT/3nY0uwGg+IytyrsNkdLyYv7FBI5LqW0uEATGAsKj+pfLBo4Mh8ur10XSstRBXP0G/h0n+AEQ4IMwMX+GwIlp2fvBmV9O0N7ad9A+m/si3K9Pe7AIAyxNswKaSEc8vXGIlZcfhuOBL7sQsQHWxYlmQJdem9ReIM1bewbdemh5h5cTbnsg2dZvz5w5RO+BknZaNgmdHMR7Mt0ZQkHeNhIT6FJFPKAQmLVcU2vDp8Ci/x+tYB5hIID1V5Dn/dUy4C5BTBp0V5Rs3VJ0NAOHmXJRsoF6ZFHPcHxImcF3KIYBILOGqiUSbiUopxOgLk1ZLLSqJvBJfYQuMxS1rYOGyqJ+FjuGiQKn4Kji5Qrt4iv+st8xcHWoWzGwn7yp/lxatJ43RBPMCBr5Xrw8/dIr9jY/DWlTD2ySevS7Gzz56ESvVC2aVb0apDXDBaVML69jcSAstxjvoNXjAPu2bYwg0R6VgkJSo/ildcMjApGuwX1/Tym4Dewni7n3U3JWJ/9IjTPf5depnka+j0ltPeiSItxIFUu+lr3iyxoumIQJuvN7jlE3YRcnMRb2KncG6f715JN941RlHnhpzY95vR61+8cn87AuRUFlRFzL2W9iBPb/ldgwcVpbkirhVVaJf3jHaJSrtbnx2ywbmT+DeoARzNb3/vEGQ27u35bPxtt4Ori6aPOhg9yBFzdSMoNmt93IQGPaSzH0ta8dUwT6iShCl06hyzpK5sSD/nTHVjEIhRXFNYfuHpboEfMBfsEkv5Q/jWoQ9ZLwnlc18iyt+RpB+48uIXFPoW/TsPtZhfHyM7J1fb6v4X9K+3OJK1sMGbpDvRfBjP4+6YZW2+wIQhpWcWUnpaNaHoRrTTmsv08uJY3hYSYIekYrIRtNu/g2nzoved4MRErbsjlGPt6FtShsHK4zt/iwC/6JaPewOtjUYcuYLCYzRM7kwLww7LlQ1QzoA/Oq+5iodkTdKF356pw8ED6AsC",
+  "format": "QA-SEAL-2",
+  "id": "unrestricted.index.hedged_0.50",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-08",
+  "nonce": "/2Xq5lO3wTWVO+AU",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "6fe1093ae0bc2273ed48200801ec095b89abe5facf6baf265ffd1e33b726cc0a"
+}

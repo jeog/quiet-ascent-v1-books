@@ -1,0 +1,98 @@
+{
+ "cadence": {
+  "book_fixed_at": "the stamp session, one or more sessions BEFORE the month end; recorded per manifest as stamp_date",
+  "frequency": "monthly",
+  "traded_at": "the following month's execution basis for the row, as listed above; the traded row is market-on-close",
+  "traded_how": "whole-share legs as market-on-close orders; legs that size to fewer than two whole shares as dollar-based market orders in the final minutes of the session (about 23% of NAV in month one at $50k, falling as the account grows)"
+ },
+ "disclosure": {
+  "anchor": "K_0 is published in commit_anchor.json, so any released key authenticates itself by hashing forward to it.",
+  "monotonic": "Keys form a reverse hash chain: releasing month m's key discloses month m and every earlier month, and cannot disclose a later one. Cherry-picking which months to reveal is not possible -- that follows from SHA-256, not from our conduct.",
+  "release_with_commitment_of": 19,
+  "rule": "The key for month m is released when month m+19 is committed.",
+  "sealed": "Every committed book is sealed (AES-256-GCM) and its ciphertext is published with the manifest, so the book is fixed and handed over before its outcome is known."
+ },
+ "document": "Quiet Ascent V1 -- public terms of the record",
+ "not_in_this_file": "Universe definition, feature set, training window, model parameters, ladder depth and position count are deliberately absent. Nothing here reveals more than a published manifest already does.",
+ "protocol": "V1",
+ "purpose": "What can be verified WITHOUT any disclosure of the calculation rules. The claim supported here is about selection, not about the strategy.",
+ "roster": {
+  "count": 12,
+  "fixed": "The roster is fixed. Every month commits all of these rows. A change to the set is a roster change and is logged in manifest.roster_changes with a date and reason; an empty roster_changes across the chain means the set has never moved.",
+  "rows": [
+   {
+    "execution_basis": "T VWAP (1 session)",
+    "id": "core.index.fully_invested",
+    "role": "published, not traded"
+   },
+   {
+    "execution_basis": "T VWAP (1 session)",
+    "id": "core.index.vol_managed_1.0",
+    "role": "reference, not run"
+   },
+   {
+    "execution_basis": "T VWAP (1 session)",
+    "id": "core.index.hedged_0.50",
+    "role": "reference, not run"
+   },
+   {
+    "execution_basis": "T VWAP (1 session)",
+    "id": "core.index.stacked",
+    "role": "reference, not run"
+   },
+   {
+    "execution_basis": "T..T+2 VWAP",
+    "id": "core.index_hicap.fully_invested",
+    "role": "published, not traded"
+   },
+   {
+    "execution_basis": "T..T+2 VWAP",
+    "id": "core.index_hicap.vol_managed_1.0",
+    "role": "reference, not run"
+   },
+   {
+    "execution_basis": "T..T+2 VWAP",
+    "id": "core.index_hicap.hedged_0.50",
+    "role": "reference, not run"
+   },
+   {
+    "execution_basis": "T..T+2 VWAP",
+    "id": "core.index_hicap.stacked",
+    "role": "reference, not run"
+   },
+   {
+    "execution_basis": "T MOC",
+    "id": "unrestricted.index.fully_invested",
+    "role": "TRADED"
+   },
+   {
+    "execution_basis": "T MOC",
+    "id": "unrestricted.index.vol_managed_1.0",
+    "role": "reference, not run"
+   },
+   {
+    "execution_basis": "T MOC",
+    "id": "unrestricted.index.hedged_0.50",
+    "role": "reference, not run"
+   },
+   {
+    "execution_basis": "T MOC",
+    "id": "unrestricted.index.stacked",
+    "role": "reference, not run"
+   }
+  ],
+  "traded": "unrestricted.index.fully_invested"
+ },
+ "what_a_reader_can_check_today": [
+  "The manifest chain is unbroken: each month's prev_manifest_sha256 is the previous month's chain value, and chain = sha256(prev || body_sha).",
+  "Each manifest is Bitcoin-timestamped (OpenTimestamps), so its content existed at the stamped time and cannot have been written later.",
+  "Exactly one roster row is marked run in each manifest, and it is the row named as traded above -- declared in the same signed document as the eleven it is not.",
+  "roster_changes is empty across the chain, so the set of books has never been reshaped around a result.",
+  "The pre-registration file is committed by sha256 AND byte count, so it is append-only: truncate the current file to the recorded length and it must hash to the recorded value.",
+  "The specification is committed by hash, so the rules could not change between months without the change being visible."
+ ],
+ "what_requires_disclosure": [
+  "The books themselves -- names and weights -- which are sealed until their key is released under the rule above.",
+  "The calculation rules, which are disclosable under NDA and are not in this file."
+ ]
+}
