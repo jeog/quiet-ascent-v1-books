@@ -22,7 +22,7 @@ Twelve rows are committed each month. Only one is traded.
 
 | | what it is | status |
 |---|---|---|
-| **`unrestricted`** fully invested | the principal book: the same selection as the licensed tiers, with no position cap and no monthly rebalancing | **traded** |
+| **`unrestricted`** fully invested | the principal book: the same selection as the licensed tiers, with no position cap and no monthly rebalancing | **traded through 2026-08; published, not traded from 2026-09** |
 | the other eleven | the licensed tiers and their treatments, and the principal book's other treatments | published, not traded |
 
 **The account replicates the published book directly.** At the live start it buys the book as
@@ -31,6 +31,18 @@ an index fund replicates an index on launch. Every position it holds is a positi
 row holds; the exit rule runs on the row's entry prices, not the account's fills; and the account's
 realised return is reconciled against the committed row from month one. Divergence between the two
 is tracking error, reported, not absorbed.
+
+**The executed V1 record ends at 2026-08.** At the 2026-09-30 close the account converts to the
+second specification of the strategy, whose record is kept in its own repository with its own
+chain: <https://github.com/jeog/quiet-ascent-v2-books>. From the 2026-09 book onward this
+repository continues as a **paper record**: all twelve rows are still committed every month, still
+sealed and timestamped, but no row is held by the account and no row is marked `run`. The
+`unrestricted` row's status becomes `published-not-traded`, the change is logged in
+`manifest.roster_changes` for 2026-09 with this reason, and `public_terms.json` records the last
+traded month as `roster.traded_through`. The two records are linked: every V2 manifest names this
+repository's head and this chain's value for the same month, and both commit the identical data
+attestation. This paragraph was committed and signed before the conversion, so that the record
+states the change ahead of it rather than after.
 
 A cold start — an empty account deployed over six months so that every holding was selected after
 the record began — was considered and withdrawn before anything was committed. It would have made

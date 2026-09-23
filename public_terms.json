@@ -18,7 +18,7 @@
  "purpose": "What can be verified WITHOUT any disclosure of the calculation rules. The claim supported here is about selection, not about the strategy.",
  "roster": {
   "count": 12,
-  "fixed": "The roster is fixed. Every month commits all of these rows. A change to the set is a roster change and is logged in manifest.roster_changes with a date and reason; an empty roster_changes across the chain means the set has never moved.",
+  "fixed": "The roster is fixed. Every month commits all of these rows. A change to the set is a roster change and is logged in manifest.roster_changes with a date and reason. The ONE change so far is not to the set but to the traded row's role: it was held by the account through 2026-08 and is published-not-traded from 2026-09 (roster.traded_through).",
   "rows": [
    {
     "execution_basis": "T VWAP (1 session)",
@@ -63,7 +63,7 @@
    {
     "execution_basis": "T MOC",
     "id": "unrestricted.index.fully_invested",
-    "role": "TRADED"
+    "role": "TRADED through 2026-08; published, not traded from 2026-09"
    },
    {
     "execution_basis": "T MOC",
@@ -81,13 +81,15 @@
     "role": "reference, not run"
    }
   ],
-  "traded": "unrestricted.index.fully_invested"
+  "traded": "unrestricted.index.fully_invested",
+  "traded_through": "2026-08",
+  "traded_through_reason": "The account that held this row through 2026-08 converted to the V2 specification at the 2026-09-30 close (https://github.com/jeog/quiet-ascent-v2-books). From 2026-09 every row is still committed, sealed and timestamped as a paper record; no row is held by the account and no row is marked run."
  },
  "what_a_reader_can_check_today": [
   "The manifest chain is unbroken: each month's prev_manifest_sha256 is the previous month's chain value, and chain = sha256(prev || body_sha).",
   "Each manifest is Bitcoin-timestamped (OpenTimestamps), so its content existed at the stamped time and cannot have been written later.",
-  "Exactly one roster row is marked run in each manifest, and it is the row named as traded above -- declared in the same signed document as the eleven it is not.",
-  "roster_changes is empty across the chain, so the set of books has never been reshaped around a result.",
+  "Through 2026-08 exactly one roster row is marked run in each manifest, and it is the row named as traded above -- declared in the same signed document as the eleven it is not. From 2026-09 no row is marked run, because the account no longer holds a V1 book (roster.traded_through), and a manifest that marked one would be false.",
+  "roster_changes is empty across the chain except for 2026-09, which logs the traded row's change from run to published-not-traded with its reason; the set of books has never been reshaped around a result.",
   "The pre-registration file is committed by sha256 AND byte count, so it is append-only: truncate the current file to the recorded length and it must hash to the recorded value.",
   "The specification is committed by hash, so the rules could not change between months without the change being visible."
  ],
