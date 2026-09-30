@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 2,
+  "cipher": "AES-256-GCM",
+  "ct": "L0bgQxexNl8VRXVvDQrDE7tdMMoHstztps24ZMPLcp3yScaXPTDzGV9U1iDD6dEiEpFgaxBE66SylIjTJ8ccPCj9CGUQoOnADz+nANuLrDXshZTUuBhVZ6vbTJFfxNikN8muhoCd16tkkqXzMcyzGyF4c8gojVvSYTGBxWfz53ri6o5Fq9ZusZ0xWVz59dMv3hxOZTJaelLURUFoSJcGzJsKSl+j0jjR7phk8VfFSvaW6gbR9pp7cQ/TdHERtSNd38vWs9NjHXERcJmIoQ0Lr5E+0WZuax0UC7iZjmW4UAL/qwp2cYREqsrTUzHouSp1WdOnEISPjpVdXKWx9zNih0IUqwdcnHVR0PG+1tTaX9Be1jUROeZPmfTZ4QLB3QPwrTNK1JxmsKwK+1QC1cBI8YOHEw2JxmMiQ0TRTgIEUjmIzhtkAuJUZA0sHrlv8kBCPOMfW7h7Av3f87ZlM3h2YDcUfUel6fsJBMQG5kYijF+2XxpScWICu5Db422vIPTEXzK557Hs9W1lHHjT0lLqKxkizs2+UBqCRXfgYIA/w1la1ix5U4azIIoEm4XvdwmwDLcjahzCsxxH7W+y1YDcFPx1KHbT4abPgD4Qk7z5hAPgxwgyBge8yeyW6BwpjAwIQ/sO1sRj4p90OI9PuMtM41mYu9CzPTfAYI2SsEmIHbbwG6qyx9Zde6fM26QaJuz5cqi4eOFHrIlu4KgWbwCRFj47tQUAxk/Pjn8zT3DX27e9GUopsIdQkgGvH1jq0cG2iz4bm8Xw8kj/xVjq8X6AnroyHfP9wM04Coy5/2WeoOKrohIVP+z7PquUQ2LmEJ+tsrxeoYPY0p9lMgnBvne4xoZzO+QsRoLG+9qhlTzawcoeDHgRcuPwcve+3eXHfBEWJCcez4V0881YXH6Bch3ghzm8U030yZ5ELqeNBiJPoPoDBQT4jU9yq65meRbiV1IX4dzQ/kLXMI9lpcMiDRtbW4MKge/H6ZN9YE4bQmq2Jlv4bFBvsfz/zsh+ahJV0A7QbQANOxYVXxWSCwwAYbljXQ/Oyd3e+liFcjeHJS9OYm5I51qPEwyNUXKkXZexyhmn9npDK8oUJG2+bn7QAca/1lTUgyHzAL/5ODJ+6EJiWYJpI8dGnytmVKL1PJTn939khMNoto6+ZU0gZw0VXIIw/Ql4SwGwhXsLSTW3Ywt2DG31R1bDZWHjKbvrnQ3RJXiNYXkjUYYmVxdwAjh443RoP2i1b60qNRXBVTbvmckM4t3rogPGMZOrl84=",
+  "format": "QA-SEAL-2",
+  "id": "unrestricted.index.fully_invested",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-09",
+  "nonce": "drm8/kgbprOmiY6M",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "73ab071c8d666ad4da31d005507ca777928f236d65c52c5f25697565814061eb"
+}

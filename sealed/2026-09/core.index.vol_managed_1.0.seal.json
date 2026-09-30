@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 2,
+  "cipher": "AES-256-GCM",
+  "ct": "S/DQLqlWOnyK+wsNU0+AFmNTBIWn4kwGraitom8B4y0UdpU1cyc3IwTHBEuXORYMOJ9jbFU1prfG51XgfRhJ35dBQi5bK+XqJH7qaEpef4BSr6iZGmu4ejAu/IuwHVjjGHhI19C68Tgb1YNpyCg0V2tY0+MirtYmKsaHn1QyybuZPdeMK/1m9hsVI2WmCfBArTbgvHgeYAkw3a7Rog2gZRPxZjmeVeRgjbKzF0K8MNGfw0j2NfWwDDvZ/V5EVVJ12HD7ZhiQ52hAzBa4uDHeU8dApM6RAIu6L++kZq7smOSiqvuQxTZcXBZWJgHl1tD8mWdxpQ5Nvfsrw8gSB/2fWdq2HFBgfzDJd3a/YACMXhShit5RaOfrJptUjqJ1Te/mjLHj8eNh2QoKx0mX+2nqr3jmykpqVYZcmyEGi+KGc8EobE7as3Gi1H0TjqZXrL1Y8qg1ck6hQewpYDmeuZi6bjZpEtr3JI1YVWcCIyby49c7V7aw2sfbhGLUunD/rGkexB2RJt9Mki6bC15jwkg8eJx6FEJ80rtgcRTsKL5t9vkDMk5Gydl6wuF0gBPdwSPM5nyemXK+1ocLSQHzXOG9wvlox6XzaskQFQC1QajqwTP/VE2wYM1wYaL+fMoxI5huAMbJ0p5HML7NBddD5NQvCOFBV0g9socLLYe7D8VzJTV4NYuGDYZkdzSyirvG6zhKQB5DEx4K8UZuy9EALzF9vx2zsp6XVqGGbyOtu3dYxwn70WUQ44IlEIGR+9Xy0M1+ka9NxVs7Lb1KRN5Vt9H3cYxxep4AY3o/7LGIo9UbbMbSN924yr34ZVxqQmPI5P58xxcR6W2gpxKkiWyQRsDfMzAXi3XvEvndbht+eezBZ4Y6laJeSi72/QjWPopx+OMuzwZQX+KTPQhtHED1FbGcvo8ZEcJE8dOMfiG3BBoYED40zi9Cn8F5j2Mc5F10wOu7Xw7I1QQqBc+LbBeTHZ6jsBNsUllgGoxJbXW7uRXVy01iJcc+xrDHuLVqvVwfZlTxD4zK6gYlZJRexmeGrQg1sLDTF4mBMm7paYq7ztVqp1z71/XCQYyW6YL5DZrJeCQe8NRPkPHuPFiJf+nloDW4Fhhx6Wi0zAZVLXg+YF466Eu58zv3gQsqvJJpzmfblDlg0ej1AAflffnnYUF+c0Hv06n00I4ieW3hpp0Cjlmv9WqnV4OVwFB+0Y69/ijuIad4EksjW1Zex78=",
+  "format": "QA-SEAL-2",
+  "id": "core.index.vol_managed_1.0",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-09",
+  "nonce": "sYYtFKV7gOKKoKjx",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "be3cad805deefd4751a4f07cf0d7128a40fe1bec4411aac21203adbc730beca6"
+}

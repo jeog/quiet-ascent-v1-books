@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 2,
+  "cipher": "AES-256-GCM",
+  "ct": "DbRj9sZ/dO+Sm5NLCao2lbW7GwUHshoYw5M6ygnbqZhuvE6pyqpWRy6c9S8mnwdmCghUg2Y8po/e3eaPHH5pQgQ2f5dsSkagsxl22RYhKoIaRvDj8UngctzWCOV8X6CA6ubGMRtl6koI2DXIIrp3sB2WVGvac7cuy9lemCREz1UgySaRMafAv+m1aoW2UKAetlBzb3w697esPSJUm6FQqz9Lio0hB/wvbGCXeoaDqVB8bgiRogi7u5+kSP5gtOFhsWEzeRPhhr+sr10qrAxLbnDbOpDA6/kCEnSXEOXeXdu6qTMwwhaC3oEWz1xPWzGYyeVCxQyiaBMXREoaY3Hi2D+TXLGGxvl0dP0yyr4ouJwGchQK52LSdfu4mbSXtmWNXn81htBWJJ2Bi4b8oTv+Xoz18y+fhdj9+QYmIC3jL/VrgruXvxSBZt5MUjoGg/0Qxz8zz1sEPoj811vblssU84RF+tWvzjGrziKBeGWFifFV4bnRvhvoQj0ejEDFuDO6UozDPlIIGFHPFFNXYzcUTLRBXS81GIe32f+RIws4A6VZOcVyAYdsA9I0wjW+KauObpcQwDXuYsOWfkcEVk5DpSPnrfkSWk4JraJXwHHq78JboVjc4vDh21wK9W29lgGodZlvXuVrIJHA4WLdTyb9Mi07+8MnKEHR/dckykakkfKG+TVkwb2I7AdKe8ERyHABDXtHWU8YGXZmLOS75puXQKBe6EeUwoJ2Tm7O6UC9a5p8xNL/elFKq0ZlIP4ylVh06uWk0seF0YXTtBTvX3ljqrEbwcEbtBeQX3eawT/0nL4suMFntfti8JMmrH/S4pKtO4aOe+sHidBRaWHIDe82el+6WXCES0NE+ORqEIrn4G3OJuvoa4kdYEPQ8faEk6gVoBpx6uGV4QEip8sIRs5ymVxwK42ZuTfcjR3BobB2hFBYrmo7GlUMHkzixli51qnfEY5V6ZpoDmsuzn9aU+kJ0VSgHl5+yj9v8YNdz4n1xuD5iMeHSKqk4UQEl60v/URCuU9jRSaklzmgPz15bZQ2UX/dIGEJp3EFXjB6IEsMntSRRfMJLAMZdUsjeMAIGMCpCDBdV/N5yk3dFbBEX8QD3B1B+zeAhSEU80ALk4SOXFByxvdsxMYNEcUDjyeJQjR/8cMp7HpcQBXHHf8obk2qn9t8fKDZgpGd0UEiOxziMZvbAm1OMFo96glTgtVn4rKx7Fb6AVZg7AD3Kcf/OGRF00E=",
+  "format": "QA-SEAL-2",
+  "id": "core.index.stacked",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-09",
+  "nonce": "7zkugVrbvxFEnIyP",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "94f56c3ab624f86f043b50a4e948c3c2de6ccb2574b3d74ed25d7f63bd24ca55"
+}

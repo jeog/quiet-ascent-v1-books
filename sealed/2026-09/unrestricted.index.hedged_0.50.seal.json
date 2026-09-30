@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 2,
+  "cipher": "AES-256-GCM",
+  "ct": "DV9ssUMIQ+igSv0n2GhQ5baq2CdKWXCVFG5oEYcZYcEFRjKQ0+HTh11e5BgobEsACq8Nmr8fDNN5Omm8KnS6C+MnnY1ANjMPFKpDzxWuDVesx4G+oE+f65+8HNPxwHY8LYd/qMilWJ9A6Srht848ZR3VKVVO6sQXsGtUmotOW8AI5VXPNRE8K1TAzesP1aL12qXMvl2X0VhNPjQvPo+3YPsJ5XGlF08EnK2oHWoimh38k0bUaDR2VrdDyc5AZW21UKoy5PjRwnK3cIHH+um41v2AIhdnroKWG6h8z6Oydelt5iF6LFpZg1B3FMUT3Hu5R7OEawiWJB0ZIlxIFK7Qjnz1cJP2/7KCACvkpkOuTeFcrmPIpvDOIkyrmESa5Y1fDzpM4ttcuNo1GXps7Do12hcuuXVRcJ0TYRTv/hoSXaqLxxvgxdFwriCat8tRcslxqlMz98Yr2pWVf2M/2Ukh+8n1IM2/ExUPYsLFeqsfhRcHpl5etZs46mCyvRfpOJJABBmq8kjw4X9May29A5ZM/BDXOU1XmPRVjMZIaHrlnwowggcf9rTBjBxK18RRqhoCfyxRw3tyvb4453v4U6vrRhbBYfrZOSTbGhFwfuZKrL26jXZ+2j6kbkolhrQXQOp7V7PJhrNXKm/uiV/Ld555npLB2m+Ma3V8V2xWoSzw/Ninxkzqc3VIjm0mJQ710zQzIVirBhNPPIcEYjFcJC47MJzwl1vc7xRLRyvkFO3TkC33XZ2Ls/aErY8Z/vCEh8+uU1Qepw6bUUa03rXu7OuCK/9EkHc0JbMdgjlgTb3cj00idQfEec+BPJK8IqZzkNzF1FEkFH6X8+Tio783yjDjIOUMKhbqoB4moA+m7p9AGr6rQrpSTb2yC8/WwFxBCqxsr35eTHV7YkVzM1KHwxEb6GnVKl/fBJxh8SwNfel4u4ZiX/qvLDb+eEB/5MicQbAH56zHhQTsJ/3t6FaSGcv3Lu1cMBfzqypWiNo0feImEJ8h4uTy7dcxjknPzV42TtomC2+o2KZVUtohf+gYSAm9VqUDkxDy8TL4tNnVbMNlrJhYogGbiw0++dvrsWLZLrmJOMGkmxnMorYvqi7MS5norvYD1mZh+wvcszxZtdZjATREgx7Du2Win5irnkTPNmjM5sG7/hlt2IorWOmw2GNpW09hZhKwBEWeiWV/IHj59KBDsKkZaa/Kun2cFrei9lHydvcN9qN/ZEhrD9R2uoug7FEyLDWnU5OFTC593kkyMUJ/MjFQCtJgkpr30DnJxglkNoHz5aGZaKIrydYH",
+  "format": "QA-SEAL-2",
+  "id": "unrestricted.index.hedged_0.50",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-09",
+  "nonce": "clZDQUzIrz3jLYXw",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "df4dc37cbfd8a7f959abd4c63a469f3ae0e504d98cce2e5bed1e7ea2ad695fce"
+}

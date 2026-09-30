@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 2,
+  "cipher": "AES-256-GCM",
+  "ct": "XkAO5fR7JRnNF+7lTCeu89sg/ZMRmVNZYWAjW2rvWPDj4UXdJDpp37Jyk23adKNqtEw+YqF2AQRlzVET4maK+ggDxCTx6Q7MXzLiMtIIRQdYG3CW0SZBpj5T3+qUp5+RJTtLIJBWEMR5hWHo2zmhU38zfjHLDRj1KumCmOforHGPmdd7foN6FyggUs48f7d2xqoo8Nad5uyHM6S66p1tELr5K0fM7/xvVSQ4HnKtDg/VZX8+olWwRJIEbtCLUhjUrAH7gMOtGKnKBJAqnY97b4/pLddRz1VTrMiRkI3RWVYEqvMugJ0tDs6HRAepEvZ9xEEzPHEhzP0mS0C5kYKeESQ0wePcMF7PjQexfv7zvbIwvqcrQDyfIAjVZZrOt7dPEPXkiFWAgFx9vV04Y5ffymg0i0NAokL/4CLLWhD9KqiCKcmr68i7mmATnbR6DXx5VcZDErFdt6lcbFF8/Otnn3U+mC1OgCJj/unz2uFIHkgNo/8CSBETXFoaaOYvXEwhzQDH10geIU/Gsb24KSILL9JQwY3pWCGwP5PuXLwS292pfQ3hZVVbcgevMJGUCbdTBfpAa/LOL7fQETT6PITE/8+yl4fE/KK+Fn9auxEYYvTlijm8d+gJDYouB8bBsZ8YDpTK8whtY2FCBht/4Uqceozn3Sg7v0X2AlB/N7yb1W/tjBDZKFw1DI0A5IcEjqwzPwr576j/oXKQOnkJnvFNCUHfXDwJ/6uRfZY77aY07NhJcA2SZoPASP5LUecqsc1qUxRuX9ePxKd3Jaou6FwH8o+7z3O++FJEJgPKguQFbGtX8Kg6G6hGB2mlFzdxMSP+E1hzQOYEuUbUScMKAZ4RzLmQlKNN1e3XPZBhns6+nqO5hKr+FW6X30E5q1YTQejAOdVLqgKkNicGVtXtbSRWuANtpICaIuWbLZwhNVRN7tTmJj+4DD6KPJol0YUBBZ8MCzmvvaQHLLE9k+xPuMg9ob/3xFLq6zDBK2qTuQSyXlLe802/GLYcAjj1IrOzcrhAe/ZEc9AHCOjGvWt15UOh+s1i6lBpQ2jczuVeDnrdQ5lM815mF4zybUNB46xwtxsfWyO5gqdw7LDOixq+cfPoqyvTcFEZrabm2i7Tghy3tAzXknYlayR/lGnWL+2I39GTj8ZWMApSlgkGeAmCwNqvCkxjSlK58RDlTGTnwT3GsrOpG9VRRFCX2IBkMaQwoN2Eb7LAI+vpEVmYq55jmqDh0AVli3cK1Ehk1uHife3C6CxmykehVfhixjAWmBTASeCdFpiVu+TTJvMZFz0v5KGXo6SF3msn1m4pR/QsViSM4c62fDO+X+aIdcNnQH2ES3uHimuVlWvOD6Gne4bfxT/qmzz5Ov/0xxW2K8iYobDT4SXOMTL27VlgYRMIPoPJegX9yu5MmTp6M5s9VFZh+KTxCJ4=",
+  "format": "QA-SEAL-2",
+  "id": "unrestricted.index.vol_managed_1.0",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-09",
+  "nonce": "vmx+fMy9e2+Jgp57",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "fb7cf111f13de9687f3f310f9f4430a6f02493339c6970c27070b33fa3bd88ee"
+}

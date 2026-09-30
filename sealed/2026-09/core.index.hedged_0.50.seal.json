@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 2,
+  "cipher": "AES-256-GCM",
+  "ct": "E+WNDSUCZiLcl+828/XqY5QI2GbFglAZo54uz2wvvwGsApkkontqP1HUmGNvhWEIufJfcrpwI3mASXP0tSmryiZ5lHnepxbInnGgnZlBArWBXlGruy6ZtupWi0Wp7qgBG/my4OE0HOIv2UuntfvrJKODaY5DjgFQohPJcefjSm1ohnLfKN4LDqNabWtFxfaG4WM2LZNy01KdUjRa3Owqud/OTPyyjRQ2osgxlkAolGVf8z1ayywRinl99zUucpNO8X2RNIvOpV5rgpTAPaNV1/ipAGJtXON0FZS7JgPeJGidPMcxPg0WMeqRH02RqWP4eIoo1vvpqHC6/EAGslgOzo36pANQx8fSe6BH22VZw1p8rrXfetalm0AmdS/YXaOeUEDHaRMiYIYycbvdUQbR8Ip2oRx28PLv6FOcYA1En+todnnR05fnRTE4ghXlz5B7VdgbZ/V1BZJoc5G9wdk+373qQxGwj8wSw5EdqaBOGz6/tw1G5kWTp8NXXnQ/JiVfkU+/UbCf5zJm0UWjvJgbUGraWwf0JqOHu5rOmXVvEHPUpIpWUqA1ha/e7DhHkdEhCkFoSy2BM67CcvnSmEoiryM5CWLCxUnJ7ijgv801ob/68ROaCp+jC9OO/NetPsrlQpFr2Ja5cBt5ZAsHu4lKY5ytcnGNJPr5icSgSxIKSP0m7nvTT711sOYLpw8fUUU2WzaQYugGGogKqLQrwhO1/RkvNziKmZKVUcqXZI0FJ0+GbqpcJ7wfETgW0bDjdHuXxWuHTVfq/n89e26FT8P21h+uBUX5kKU6yi0CE4ieYxlIgDfonRZJV54qOLt1cc//CsGzqFSRVYe8oCNZPBxAKfQFauv6lbphI5nDkHVTSYmerL/QzIEVuZinVbo9mvhGH/ci34r3Y6HnqVwkUf78sUAbsyHJnDXrMi/Q6I8RdL+NcAIm9LrW5K2sHLcpYPKO5A1AbpL26uvEMklY7ScndihhHpZ7sgcQS4GtFxLsGpK037nzjbsYd1SfNHlpSdEE5yaqD+mYV33ecPB5Z5Xr5PBnO1bDqEFIexgI1bYquLCEA2fYXtpgN/QfrzqDmHxILUPhM0HrSNLzL/2f+lBs1/KVRiKhI4q49IldOwthpMy0HPPCIXFr0n8kc9Ci/1g+HvwGtCZYFp2NQ+s84xU+F2BII24Nop6Cn+/1tp/F+pT1WOJICclQ+xcuqX++GjlqvhHj8YhgjK05V9NuykWN6pFPzjRe6ih7BA==",
+  "format": "QA-SEAL-2",
+  "id": "core.index.hedged_0.50",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-09",
+  "nonce": "JaOLEqB8LpaZWakV",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "daa0e4af449109cb15a9688ad9ec3928f7c879e2a02cfd486380dea7c4b5c670"
+}
