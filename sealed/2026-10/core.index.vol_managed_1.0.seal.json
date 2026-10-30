@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 3,
+  "cipher": "AES-256-GCM",
+  "ct": "0OYnOPa7lwO13etFZ5wrI1L0vbHtL1pkzgagSCyCRKKREMnGwjBb4KRyrxapBj87fSLzWotHOI0ZytjsZT0kxhxlRpstdc4NBdg3qfmPgkLa8hrvHf4xYcdTW+BabzSsIdhdKyNiG05AeJ9RaP7BCORfHgexrL6BbwwnIYjq5zTcbTCcHAbIgM93AI+ry6FwMVNfTsRTlqw3MMI6lRGPxMiYu6LtU4I0uay41SJ1EO3YqjIpxl9vGiBZn8PvCQtsNsfFakfCH/CglLmZO0OxIQ1XaMLyVn9p4O7vEx0pprxTZBr/0mEcj4hIe2edCccDsh25VAp1CM0VfigfyyLOYTISxxMqdbe5b+rBsD3Mc5YGh0Flbg7oqLjnpeXBR85iGfq+Mk+m7Uj5HmFyvOUw1Zh1elpHc3siyj66qtcec/QBnlQ8s/jg20wwfGcnhHN2wPfmFZW5l1PD29OrzbYBAdEAr1+qZ3a9GF5eMHpmn7YEUEvfmXs51NKY1GbXA2c1MFif8aOADoZgxN+NJJqdzbfOIoX0zC542E2wx4L5Vpu0r2kaqbopI6tnfByq9iW1ls157Hazx5FtInd/MChUdk13y/qKuA8I2EN5atciafSwW+92KIQlbWKXdZMdRX5NKmfAF8gAMcpzqnkTKp8fYsS2E3P2E5ZwkvCiM/mgowrx1wYeCVQ0AUfB6lhLkqpG4EOO7KyFTvinZt2Jifz/23Qg4OmkLa0Xbdra7YbZo1fF2PvsfjZrNGG0BIBWavfj0kINFdPNjoHLCxGnOa8dR+ICN4OFi8XHiRaEmQ1FHgbL0iYTTwWFTrhBMV5QXyevkOTyltM7p/g/G4TUwNtW1kg/wz3reAdJTVLxSGgE+Vn9GcAJvr1W5niShDy2pIvgaXTCh9CR9zeom4aD8cPBU7KUEb1O9B3hNwPbdFoVMxK22r50sxCbRW8qFKHjgmykZetaxcAwLuuYEBFE7zP9y4dyCUWdpYkxgZNOWtdIX7olZwADSQshcsSyLbv/X/Xz1gmVftDhT4bytwicETYYYrMVHc2Qiia06xJo6coZDijiR07d9xWTLLzMne/HLT+IXuMxwyY3MBPNT7hN0RugFLdqtchLqemPNOw9IrY04gSmyrHCXXKYiLZ1FvzPLjdVQLCP1gIE8sTOLbTth0yAjnYR3yQCci5ViMe5uFv1b3h53mI8rzRAQVoVyXBozBE=",
+  "format": "QA-SEAL-2",
+  "id": "core.index.vol_managed_1.0",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-10",
+  "nonce": "W/stHuxgz8nlUuPC",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "804645fea1f5f722022836d48b5e48bc83d3c3e068bec4e67fcd3fb5d7c26a23"
+}

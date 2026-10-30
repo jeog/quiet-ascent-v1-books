@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 3,
+  "cipher": "AES-256-GCM",
+  "ct": "XlOF1VNTQEmrw5vsCuRMTAwvzNcwjF0TNygJsRAPFfABWeVyNPgvdgLquKHq8zxeXbfTUGKk8jN+tLdwDL58lTGLBZWEjHvNrlzk8QAhKBAyaE5qAC1j+486qFSxMUx9dmNoIG+zRFHmZDmHku9nrz28/0CTCI8ktHnUNVOoL+wlfBGwZAtBaVDYKlFopOOEz7NnmrwLVqUIN1Mr1dH+505Egd5WUQ5S8UdlOaExQ/tw6+F06NYy50zKkvZCF36cRw7WVkoM3F+AUVH4sZvc+hsG4zHXnmZnKsFv8GYeWUwUht8365K4Vk75Dv6CWZy655J1QXfiifG9Obtx45ez3jPyjuQesnIJbzL7nOD+gDCHB8qtdxFPp1kIE2XghXvhzFHKgjHOwmiIWgrsBOdU4Bijq+JW4WcjrFjQ8C7pUlTKOdhfq1HOLbLluwL1uOc7c251q6QfGFR+SQJYfwK45jpdFz2s2ydTWL6lz3udXR8TflSc5EDJxfsirh/S5du8ExtQuO+qehNyxg8RZp7JpxysyL58Q6+chpJMBwi0mvn+Q27VyU/VdaT7bNeMg9egdsRl/FQ8mqN5kZavmWPXh0YZ5C/ICybDUKrYf4jWpW3dW8Dbckp1jXBZqrtANdqpiXcSjVWzfv8XBhJJrjeY/tWfl5H+oCR6OkT858oAGCAGnAOqubtB4A2E/MbwqlL9hBQl6KFjm0t4+ZUUajN1EXAAvfxRsu9pAHfJGDQU93EroySGhUsYFiAYx/FfOMneHytZfi1/2ShN9kXKxg0G5M4/pXg/TfdMFZAW+2yGpr9ZPyyFmp8uNCjuEI13Gaa9AvsCoQx1FA7RY234Ry6nR5YiLcc3b4EsHIk8758VFCPPj99TO/AnF1V0Ow8Vd9cEW++I6k/ZReexLVaX0mupbA7CaxV3D+pQ/7Qumu5PpcSrT1mnL4SUcKyjVGmS+frM5Mpr6H54hn7xhttTTbC4E/jqUe/28k2MkVHCDHlWOnSKBGP/phctMcuHliQyIQbBfSpRYMfUds96H2zO0AnVK9z0I+6DWnBF7RA4vqS2a4H+VXTh4uqUFbfBzymey1wBu/NA75hXmE7RdHrLOCv642uoVQ1Z0cH0DIUARl4GjXPAntqprA0URPUiqSDerzU5rrOu/+Jsvo/bezIM7HqRYZrPkfvRJtnKXdsQJdh67y+WSaHZiZ0Eumh9SP8kIFDucMRPbS8Yy1wU7eU3qdBrhDo9ByuW7Xfd3mOwHYJdTBn787mw6tSTQ1Z7leUsmymcHYJmvJwVgA6Y/A28nAk=",
+  "format": "QA-SEAL-2",
+  "id": "unrestricted.index.hedged_0.50",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-10",
+  "nonce": "PyObFq1oMZOuKGFV",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "ce17e2f9c80b74e2e17be984e39218006a7c8f0c3f84cd30c93b7cafbffe453b"
+}

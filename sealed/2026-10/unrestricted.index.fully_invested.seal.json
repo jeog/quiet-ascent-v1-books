@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 3,
+  "cipher": "AES-256-GCM",
+  "ct": "Dw+7gas94IPcZboR3Pwuh7GcTT8prJQEDHYTmEpiVFoMm8Tt8D7O5uHpbluGFI4/L3VGMqQyfVOaSBI87ZLV5QDhY6wc7itMBZQn1RTWT58p/NqZZx+yvcw8nDyEsUUyE20SDHB7qKCh6Z48ijBtVOP09n8aDeBhycikELI3tm0nMniBuy6WKCchdZ1VS5EO4DI5IqqDjQwcS3oVp5aIZYK0a85Fm5B5H8adXfWkozqkqtcJVIT/XD+Fd4mSbQm3RBhCA3eIO7XqnBhYgncDiKp130adjcgqRorczkdfca3zuY3V/4nDRldjlEuZs1jDzfIeNk4NJrrZ4sMvyg7I+EIkym28wgwWuPmUsSb+5GyXRuaUPrfJyc41zZjfa2tbo2Z7sMGYmgkJgOKXSEWIiD511hQlck+VDfDzIVFa6pJ/AH07VFResNR9SnaDO08uWtDEyPffyRF6KB2uXunbmMvJV47wWHemPWTH/CN8EyKtdU0Eaxmnrzm74TgEnpTKoadGZw8rhWtOoLvJbHraDqfDGFG/mL1qrjBLgARyM/Ov9V13T7/T7eJI65G9deIyiAot1O3qlkKksb/OK2t/QJk2P8qOZPC1wYuA5upKlnI2K6rLMF1wLsr35ZARx+fyF6gviB8mXOlx+9kOGJOlSehMtNpJ+UXEfa5rq68bE4oUYR+jyGy9Yzie8ROXVo6Wy5JpFit5M4DYTped/giDT7ynYBUXsJgdDIZcwW85q/IIuKbjALchaL5cYIxWCLuNo9Zp7t/mrzpWKmSdxPqlqhXKxiV1UKvOK8m7s3vOOrtbeZgb/BRzeQ99twjSiRrsji2UAi4fwyh3xgQ/XzK8nYPFjyJdLQYwog+yHmgirlZfLjz/u5vPFvY2Lg9Gbq+BWGeW0TD+k28dYa7oxS4u+kvZ1N6qF1Igv98aJ/9IdAMG6B40mTDQ6GTr7KgKhaBdQ0rdhYDfxwLjoGz5sLlPr99c2lMsk39q8Rbo1ITBZF6DM4FcXKOA3dKlbtcnwaqVaON6ximJWVVvLKNZuzA0KWaDUc7khGFijbu4Bqk3wwjRNKctC3TJ88Y/1AUpZ7y7vmF4KcyUln8xNhYqls2gQkleXOoCbGAy0eEPXEaVe/IWreVr8GfoAYc85IrJawFjHcf/Jnme3ehqzmRnSLCXQ69rNBvzRk/PqrsSwpKaL8AQbRQh/AxfRQrbyuwD1e97L5KFcuPBh73Mr3I73tsOAY7VB94ozRSDYY8byacc8kcG7a77RXUVC86cyA==",
+  "format": "QA-SEAL-2",
+  "id": "unrestricted.index.fully_invested",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-10",
+  "nonce": "GdahEkEUvPm6Ml1U",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "f0366289e49d6d226dc5c21efaae04d295aa0f7d0d2173748ccd52273bda1625"
+}

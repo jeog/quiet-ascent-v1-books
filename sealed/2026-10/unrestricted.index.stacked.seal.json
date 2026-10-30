@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 3,
+  "cipher": "AES-256-GCM",
+  "ct": "r4WXnzSZDjQSUdsKdlGbZil8BTOkG5DpOdrRWeXdEmVW/UtFD/pHwN6IUwWnFRTApIrxCjyrKLWVrhx+uPrKCli+y+zbqeZ/4PBZFBA5hKqMQ8OV6MyJYZvxPPl/S4ujZi6Fi1+3IwIJErEBgMUmi72g72Wwy8waLpKLjOKlv4hL3SLf9wn4vMctB0H3wDLtdvJMLafyMfmyfWDtbAPMWCA6pGB50WVJ21jg1XKIh1AC0kcvwuVZWzTY35fv6J7nIexjLstPauwQQ90wDdlGu/TwKIa+5Z19LMYf5yYRWbun13FczHaQoX88yfKQMHgGdeOK4H6oPDDVQbjRxCLrm+3z6mmMMy3twdhfCKNGY34vVBR0LedWTUYpCyT/5UoxER70BOpfFDSh+nb+XRUmIAWotrUASnjQtqGIaPDMtOmIDYH18ZQThpESyfxI+WpcbDqH/zQ4hTBFpsfJ8KfZUoTQyuDjty1XUcXyqW1DkcJbzbRb1r1WErAzJxDAuW5dtFF8TiGlRG/74WEkynqgl3/qa3lp60ZKWpR+mevzCZvaC4ri9wKgrCliCJu2c3en5DLppDxU8/D+5qB+Y9vQ58HR/wzc7wzhaLFdAm3eXbqX83xwgTP6kzZ2hpf36bEQJ7Sk5odf9ZqShqUJPDDy7iBbGA+AI++M656PPVCv1o1f2Hao4/4G1NH6FMJ21xJPy+6vHoVOgcXBqxb5+Hp/3DI65u6BB/9PjjstlApys/E8h5TxuOIBNBZJK4GceW13zOTJeSRzP9NWPfWUWqPlAE23wYb1t10tKoQgDulstpVK5Q548koWxz9NFr94rzV4VbXyOC15SJUggEengNQquiGaYQjZ0GYnm2JbfAj9RIoAsA+2DrxEVaQD7AaMjzGxMD42y2usa+osOUyvsc8+yICrrtRi3TTHPhq2euhboL+lYDXR/cSWvh/zq9xM9zlwxuxE5DZi0g88FNaKx6gdda/Qsro77P/PstML9hRCjFB6fjRfjQdodRleUPQWVlJQL5Bor03uZe4urGPT0Z6Dtg87Lh0qym12xA3Ram/O8/J5SSqQTywexiF+IZJImHtfdIs2ESPB9c+5HyUAWXS8/x5YsrCqSTIB7cb++UcWmISQBqF2/IqaQ7nXHaQQVNFqUkNwfexrrQxbv2Cw42qSP6icjHuUMSbU9LoNtFgQ2R1VXpKTFs2xeZNgwGMccI/DZ+VYXP/k8WK14AgKrko+jA/HQTubfXkzGv+2ayg3aWukrF9a9UGHV2l/aB45EP3mkGEbPtWy",
+  "format": "QA-SEAL-2",
+  "id": "unrestricted.index.stacked",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-10",
+  "nonce": "jD5oBxwaEqkMeOt3",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "10939f6f3cf4721990daf8976bcd04a7cfc30ba256823a3bf5c3c2f74619f97f"
+}

@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 3,
+  "cipher": "AES-256-GCM",
+  "ct": "iElY3HqgzEEYyJ3M18kEHml9E4e7qI0z/srZclwjj0vHrZvyae/XPaw0Qr94F0Yt5/UuTPAU0caYPIcYxiyIBhu6IwJ29HoJDd97jcnmovwXxNCzrYcbPbC9jj+ZmUgk0D8ZJfe5PORdM8IU8xPl1NWnEqSldqyDiNN+sxHkdissvfEbT6gp00rUnOPHHrHPYbalYSqEzyEyCPqA1lrscyOrKjaeOXz0rCg1LJ7CKmDGBSCVwkGwJ2UYXDfoOKJQGi3a2jN/afhnhAnUhINqmBivkqlZGqi44LHsUds9Vt5ATCzHruHMzzdjqxwM988g26Pq4istBCrQboMdowltE49HXplcc6aYh01WThXOlqls5D/NBpLNyl+jxzsbX2ejBrJYfHtD07cztWx8QvZvxJbTSIkHFMza/i89/t9FYvpRvnBMD3TOFubHZzSSQ5Y+BCWsAkpRXoSdM+RpypeosrpvbVritaoOHoivBvftMEC4r0uN7hLJ7Ko1nPadsAvShClbozTG4LKbBu6iizE3oSAS30aRvN/0i6ZbJc2QgNpfDcui/fwJxHhFivII9l+BU32SQoII56DsSUH90/FeiYGU2OfOopX8jXL86TKTV1jln/7FsvvzbgT7BbpxCWy4fZKu3UK3UGOqS9UC7KgMHxl9+ZL/VMpTSrhN3ZLpHh68q52tE02eIQ+fp8dFXpLuQeZtKYGMyp2HQ/XU8E0wg6aPIG2+mbEyW9NHTgCQRWyIsn5RyyAHJV3KvBhtnS5hM30i1GbBF7BsRYM14rHHoUBsNK0MflqFIt9Evl8YuYqDQGq1x4ER4eZtmH0HsAXOBW3cy6YiVVT8+ZZ+cAdbZjc+1pZHX0dDqMUKCk2bI1U26XF151CrXyZeBMPeE1RBOYjJu9TMxh5Cjy1QIpn1YZ7sQ+f5/t9i81FJ0jsO4+xrji+6NtgeDyjprOBx4zO4Tf/dUVGm/OfU9Kda2kHFcjgKkTmuHGXvWUawEe051N8qHFwROMIr3EUDym8HT0dES/eTIY+e7AidssMH7sbe4jA4mBiW3JhkT5ii/61MnwmsTK2f6hbL46b91rUReHM1V6nkHE8o0e7FV1iSWPvjPwVGAYTjo3Fgw3C4B58BUtjLC3iW4QpKg7ICwSvCJcfY+s1L/Kmq7WLdeSoOl3rjOew0gxVkuUYInU1n5UtZxA2hs53jRoOhAZx3KXjtS/90xG3niKORxm+UZ7MGJ0lpKA==",
+  "format": "QA-SEAL-2",
+  "id": "core.index.hedged_0.50",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-10",
+  "nonce": "OeaexmS7hd/+peAT",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "cb01d505f10016156254b8e890b37e36a61eb8bde43bebc05ffb809f29e17b66"
+}

@@ -1,0 +1,13 @@
+{
+  "aad": "QA-SEAL-2|<month>|<chain_index>|<id>",
+  "chain_index": 3,
+  "cipher": "AES-256-GCM",
+  "ct": "eBvMHmSiQoL0uIUXkeMAueBx+Aj+IVq4M++brGk67fbC5TJARM6Oo+lOEzY0gzFnDkn3c5IYW9tw8BieAZUQA2Hec9DkllqTlTkxIf54fT0IWdvNxDVDPrSNjLgonFLlwgWG5FOrb0T2py4eetNDdyzVaPqtkJ2+A8i9CxFz208Q+5fcP976/sYDZmKuIkARdGvfsH51a59x9SvCpEQqUZ9PAKi7ctY3Zn/fV2TRT5/ssaHvmKtZqum+/I/FvGtKxxaDhytv7UGyyP4alHmsfAwyWUFtK/2WLS+tfMWm/xXWLBuCqJiZCbcGTvQaXdYPNKnXdK2eSGcUiw2C25Jp8/vWsjuR41jw9tWu21UwiRWJfqsR/P9aOoOAA67JNCJYVupGMb5XIKItEdegIZ5URnMfUkPbZgdjYTWpyN15vshyUExm4FrpEeo8imHCu6M4DwNadCLoSQCkl6yNPpsH3MxJznR545qhQ49+Sd62sr9zJR7zj4ai//bp64cfdGR6NPNnDiy8/tWpQgH+IOisDihKslQ+qW4s+GmHTq8g15DBiUTK6zzOHiBDVFyBxXbjah2KnoOgA73I81wTj1Nl7vD0gmODK8p2gcbaain3mOghLT1mOOfhOpTFeQdroFZ5ujVLZspAtSGe0aDZALnyf0NN3Jwd5zAClxIIqtcrWpj6twyZRxO5wCmZqJXhm9Ve6R++mr5Gel6Qm76fSX0CSKOh7L4Q0WZlxGpTtEaAi+EKjkKlD7wLxW3TBaUU/3m743TxCWZgvyoo8SI9eLtp5Nre4Js/0JVP7mvn/7CZTUQY0VhRlkKZnkntHerPAikGn+ui0Kh8FGH1Z12qKqTBFxAshrCZolCgnhT52+HpM8TFbMxfMY/1B9d3Es2ghKPPjet7p0H7yevy/AXZc/lyv37BCw28KvYMoc27f+DlLuOPkMyRlbeflAtFmb3dBaBD5tK1AnexNsbWfoLCtgQPCMJr4ClXr2JzZjC68lAX4uNqKVo/E+T9TXVIiWtRZ6sJZSnc5mQVTOsIg1GBT2hO6WeEPU93ZfQ6EsMMlsFH/KqARdnJ/oYX6EslbJMwsY4=",
+  "format": "QA-SEAL-2",
+  "id": "core.index_hicap.fully_invested",
+  "kdf": "HKDF-SHA256(K_m, info='QA-SEAL-2|<month>|<id>|key'); nonce info is 'QA-SEAL-2|<month>|<id>|nonce|<sha256 of plaintext>' -- a synthetic IV, so re-sealing the same book reproduces the ciphertext and a different book cannot reuse a nonce",
+  "month": "2026-10",
+  "nonce": "w8+o8IGwdj8CgFJ6",
+  "note": "Decrypt with the month key K_m released for this month, then check the recovered bytes against this manifest row's book_sha256. K_m itself is checked by hashing it forward chain_index times onto the published anchor.",
+  "plaintext_sha256": "ce6ef039e1afa3f60fe25ff665fdb6ead17c7dbc194f9e7641a2700fd821fd80"
+}
